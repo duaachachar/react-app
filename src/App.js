@@ -1,5 +1,8 @@
 
 import './App.css';
+import { Footer } from './footer';
+import { Header } from './header';
+import { HeroSection } from './hero-section';
 
 function App() {
 
@@ -7,22 +10,11 @@ function App() {
   console.log(" app component");
   
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <Header />
+    <HeroSection />
+    <Footer/>
+   </div>
   );
 }
 
